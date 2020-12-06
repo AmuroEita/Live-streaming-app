@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="baseclass">
+      <UniqueIdentifier>{554f0853-2893-4eaf-ac64-95fd0f59f48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetTask">
+      <UniqueIdentifier>{bffa2ffa-28e4-494b-af62-faef7458801a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{04445f6e-5983-41ab-bd55-f42a9f094a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{0c03546f-28c8-4ac1-a983-48b2020c9da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainUI">
+      <UniqueIdentifier>{adfd75a4-d69c-443c-9aea-26f4e4e03182}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDataMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\asynctask.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\Base.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\Base64.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\BaseThread.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\AESDecoder.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\AESPWD.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\CommandParse.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\CPU.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\DataStream.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\DeviceHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\dllmodule.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\IniHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\JsonFormat.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\JsonParse.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\libdefs.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\LogBase.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\MD5.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\MiniDump.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTask\PicTransServ.h">
+      <Filter>NetTask</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTask\PicTransTask.h">
+      <Filter>NetTask</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\assertions.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\version.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json_tool.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TroyControls.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UICef3Web.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIImageAnimate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIListItemCust.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIVerticalLayoutBK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AccListMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowserTabUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CefWndWrapManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleImageUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DBClickLabelUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpWebWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginUserDataMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageUserdefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SACModule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\FileHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\Log.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\mt.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\OSVersion.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\PathBase.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\PathHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\PING.H">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\PingThread.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\ProcessHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\RectHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\rijndael.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\RingBuffer.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\ScopeGuard.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\set_thread_name.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\SkinManager.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\SRWLock.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\StringHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\TaskThreadBase.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\thread_util.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\ThreadModuleMonitor.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\TimeHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\Timer.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\TrackableObject.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\urlencode.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\UTCTime.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\UUID.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\VersionHelper.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\WinMTRNet.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\baseclass\WTLTrace.h">
+      <Filter>baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomWindow.h">
+      <Filter>mainUI</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginWindow.h">
+      <Filter>mainUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Mainframe.h">
+      <Filter>mainUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIVideo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDatMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\Base64.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\BaseThread.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\AESDecoder.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\CommandParse.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\CPU.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\DataStream.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\DeviceHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\IniHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\JsonParse.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\LogBase.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\MD5.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="NetTask\PicTransServ.cpp">
+      <Filter>NetTask</Filter>
+    </ClCompile>
+    <ClCompile Include="NetTask\PicTransTask.cpp">
+      <Filter>NetTask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="UICef3Web.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UIImageAnimate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UIListItemCust.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UIVerticalLayoutBK.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AccListMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowserTabUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CefWndWrapManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleImageUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DBClickLabelUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpWebWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginUserDataMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SACModule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\FileHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\Log.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\PathHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\PING.CPP">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\PingThread.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\ProcessHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\RectHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\rijndael.c">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\set_thread_name.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\SkinManager.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\StringHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\thread_util.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\TimeHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\Timer.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\UTCTime.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\UUID.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\VersionHelper.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\WinMTRNet.cpp">
+      <Filter>baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomWindow.cpp">
+      <Filter>mainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginWindow.cpp">
+      <Filter>mainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Mainframe.cpp">
+      <Filter>mainUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIVideo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassLive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rocket.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="Rocket.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\3rdparty\jsoncpp\include\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

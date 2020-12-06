@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BB8E13CD-C854-4BCA-828A-1C1F161AB20A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Rocket</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ClassLive</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../bin/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\3rdparty\WTL90\Include;..\..\3rdparty\duilib\Src\DuiLib;..\..\3rdparty\jsoncpp\include;..\..\build\;..\..\include;..\..\baseclass;.\include;..\..\3rdparty\curl\include;..\..\;..\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\bin\$(Configuration);..\..\3rdparty\curl\Lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiLib.lib;libssl32MDd.lib;libcrypto32MDd.lib</AdditionalDependencies>
+      <MidlCommandFile>
+      </MidlCommandFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalIncludeDirectories>D:\Users\Tan\source\repos\Rocket\3rd\duilib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Users\Tan\source\repos\Rocket\3rd\duilib\Dll\Debug;D:\Users\Tan\source\repos\Rocket\3rd\duilib\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiLib.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\3rd\duilib\include;..\..\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.3rd\duilib\Lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiLib.dll</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\assertions.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\autolink.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\config.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\features.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\forwards.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\json.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\reader.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\value.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\version.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json\writer.h" />
+    <ClInclude Include="..\..\3rdparty\jsoncpp\include\json_tool.h" />
+    <ClInclude Include="..\..\baseclass\AESDecoder.h" />
+    <ClInclude Include="..\..\baseclass\AESPWD.h" />
+    <ClInclude Include="..\..\baseclass\asynctask.h" />
+    <ClInclude Include="..\..\baseclass\Base.h" />
+    <ClInclude Include="..\..\baseclass\Base64.h" />
+    <ClInclude Include="..\..\baseclass\BaseThread.h" />
+    <ClInclude Include="..\..\baseclass\CommandParse.h" />
+    <ClInclude Include="..\..\baseclass\CPU.h" />
+    <ClInclude Include="..\..\baseclass\DataStream.h" />
+    <ClInclude Include="..\..\baseclass\DeviceHelper.h" />
+    <ClInclude Include="..\..\baseclass\dllmodule.h" />
+    <ClInclude Include="..\..\baseclass\FileHelper.h" />
+    <ClInclude Include="..\..\baseclass\IniHelper.h" />
+    <ClInclude Include="..\..\baseclass\JsonFormat.h" />
+    <ClInclude Include="..\..\baseclass\JsonParse.h" />
+    <ClInclude Include="..\..\baseclass\libdefs.h" />
+    <ClInclude Include="..\..\baseclass\Log.h" />
+    <ClInclude Include="..\..\baseclass\LogBase.h" />
+    <ClInclude Include="..\..\baseclass\MD5.h" />
+    <ClInclude Include="..\..\baseclass\MiniDump.h" />
+    <ClInclude Include="..\..\baseclass\mt.h" />
+    <ClInclude Include="..\..\baseclass\OSVersion.h" />
+    <ClInclude Include="..\..\baseclass\PathBase.h" />
+    <ClInclude Include="..\..\baseclass\PathHelper.h" />
+    <ClInclude Include="..\..\baseclass\PING.H" />
+    <ClInclude Include="..\..\baseclass\PingThread.h" />
+    <ClInclude Include="..\..\baseclass\ProcessHelper.h" />
+    <ClInclude Include="..\..\baseclass\RectHelper.h" />
+    <ClInclude Include="..\..\baseclass\rijndael.h" />
+    <ClInclude Include="..\..\baseclass\RingBuffer.h" />
+    <ClInclude Include="..\..\baseclass\ScopeGuard.h" />
+    <ClInclude Include="..\..\baseclass\set_thread_name.h" />
+    <ClInclude Include="..\..\baseclass\SkinManager.h" />
+    <ClInclude Include="..\..\baseclass\SRWLock.h" />
+    <ClInclude Include="..\..\baseclass\StringHelper.h" />
+    <ClInclude Include="..\..\baseclass\TaskThreadBase.h" />
+    <ClInclude Include="..\..\baseclass\ThreadModuleMonitor.h" />
+    <ClInclude Include="..\..\baseclass\thread_util.h" />
+    <ClInclude Include="..\..\baseclass\TimeHelper.h" />
+    <ClInclude Include="..\..\baseclass\Timer.h" />
+    <ClInclude Include="..\..\baseclass\TrackableObject.h" />
+    <ClInclude Include="..\..\baseclass\urlencode.h" />
+    <ClInclude Include="..\..\baseclass\UTCTime.h" />
+    <ClInclude Include="..\..\baseclass\UUID.h" />
+    <ClInclude Include="..\..\baseclass\VersionHelper.h" />
+    <ClInclude Include="..\..\baseclass\WinMTRNet.h" />
+    <ClInclude Include="..\..\baseclass\WTLTrace.h" />
+    <ClInclude Include="..\..\include\Singleton.h" />
+    <ClInclude Include="AccListMgr.h" />
+    <ClInclude Include="RoomWindow.h" />
+    <ClInclude Include="BrowserTabUI.h" />
+    <ClInclude Include="CefWndWrapManager.h" />
+    <ClInclude Include="CircleImageUI.h" />
+    <ClInclude Include="DBClickLabelUI.h" />
+    <ClInclude Include="HelpWebWindow.h" />
+    <ClInclude Include="Include\Common.h" />
+    <ClInclude Include="LoginUserDataMgr.h" />
+    <ClInclude Include="Mainframe.h" />
+    <ClInclude Include="MessageUserdefine.h" />
+    <ClInclude Include="NetTask\PicTransServ.h" />
+    <ClInclude Include="NetTask\PicTransTask.h" />
+    <ClInclude Include="SACModule.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="LoginWindow.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Rocket.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeMgr.h" />
+    <ClInclude Include="TroyControls.h" />
+    <ClInclude Include="UICef3Web.h" />
+    <ClInclude Include="UIImageAnimate.h" />
+    <ClInclude Include="UIListItemCust.h" />
+    <ClInclude Include="UIVerticalLayoutBK.h" />
+    <ClInclude Include="UIVideo.h" />
+    <ClInclude Include="UserDataMgr.h" />
+    <ClInclude Include="VideoWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\jsoncpp\include\json_writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\AESDecoder.cpp" />
+    <ClCompile Include="..\..\baseclass\Base64.cpp" />
+    <ClCompile Include="..\..\baseclass\BaseThread.cpp" />
+    <ClCompile Include="..\..\baseclass\CommandParse.cpp" />
+    <ClCompile Include="..\..\baseclass\CPU.cpp" />
+    <ClCompile Include="..\..\baseclass\DataStream.cpp" />
+    <ClCompile Include="..\..\baseclass\DeviceHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\FileHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\IniHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\JsonParse.cpp" />
+    <ClCompile Include="..\..\baseclass\Log.cpp" />
+    <ClCompile Include="..\..\baseclass\LogBase.cpp" />
+    <ClCompile Include="..\..\baseclass\MD5.cpp" />
+    <ClCompile Include="..\..\baseclass\PathHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\PING.CPP" />
+    <ClCompile Include="..\..\baseclass\PingThread.cpp" />
+    <ClCompile Include="..\..\baseclass\ProcessHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\RectHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\rijndael.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\baseclass\set_thread_name.cpp" />
+    <ClCompile Include="..\..\baseclass\SkinManager.cpp" />
+    <ClCompile Include="..\..\baseclass\StringHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\thread_util.cpp" />
+    <ClCompile Include="..\..\baseclass\TimeHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\Timer.cpp" />
+    <ClCompile Include="..\..\baseclass\UTCTime.cpp" />
+    <ClCompile Include="..\..\baseclass\UUID.cpp" />
+    <ClCompile Include="..\..\baseclass\VersionHelper.cpp" />
+    <ClCompile Include="..\..\baseclass\WinMTRNet.cpp" />
+    <ClCompile Include="AccListMgr.cpp" />
+    <ClCompile Include="RoomWindow.cpp" />
+    <ClCompile Include="BrowserTabUI.cpp" />
+    <ClCompile Include="CefWndWrapManager.cpp" />
+    <ClCompile Include="CircleImageUI.cpp" />
+    <ClCompile Include="DBClickLabelUI.cpp" />
+    <ClCompile Include="HelpWebWindow.cpp" />
+    <ClCompile Include="LoginUserDataMgr.cpp" />
+    <ClCompile Include="LoginWindow.cpp" />
+    <ClCompile Include="Mainframe.cpp" />
+    <ClCompile Include="NetTask\PicTransServ.cpp" />
+    <ClCompile Include="NetTask\PicTransTask.cpp" />
+    <ClCompile Include="ClassLive.cpp" />
+    <ClCompile Include="SACModule.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UICef3Web.cpp" />
+    <ClCompile Include="UIImageAnimate.cpp" />
+    <ClCompile Include="UIListItemCust.cpp" />
+    <ClCompile Include="UIVerticalLayoutBK.cpp" />
+    <ClCompile Include="UIVideo.cpp" />
+    <ClCompile Include="UserDatMgr.cpp" />
+    <ClCompile Include="VideoWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rocket.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Rocket.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\3rdparty\jsoncpp\include\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

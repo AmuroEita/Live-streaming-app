@@ -1,0 +1,35 @@
+#pragma once
+
+#define WHITEBOARD_MSG_BASE		(WM_USER + 1986)
+#define MSG_SHAPEEIDT			(WHITEBOARD_MSG_BASE + 1)
+#define MSG_FONTHEIGHT_CHANGED	(WHITEBOARD_MSG_BASE + 2)
+#define MSG_TEXTCOLOR_CHANGED	(WHITEBOARD_MSG_BASE + 3)
+#define MSG_TOOLBARWND_FTRIGGER (WHITEBOARD_MSG_BASE + 4)
+#define MSG_SEL_COLOR			(WHITEBOARD_MSG_BASE + 11)
+
+#define TOOLBARWND_CLASSNAME			L"$ciba_screencapture_toolbar_window$"
+
+// toolbar window
+#define DISP_SELCOLOR_POS_L				116
+#define DISP_SELCOLOR_POS_T				47
+#define DISP_SELCOLOR_POS_R				140
+#define DISP_SELCOLOR_POS_B				71
+#define FIRST_COLORCELL_L				145
+#define FIRST_COLORCELL_T				44
+#define COLORCELL_WIDTH					15
+#define COLORCELL_HEIGHT				15
+#define COLORCELL_INNERBORDER_COLOR		(RGB(255, 255, 255))
+#define COLORCELL_OUTERBORDER_COLOR		(RGB(37, 117, 188))
+#define TOOLBARWND_BGCOLOR				(RGB(242, 242, 242))
+
+// graphic
+#define SHAPE_DEF_COLOR					(RGB(255, 0, 0))
+#define TEXT_DEF_COLOR					SHAPE_DEF_COLOR
+#define TEXT_DEF_FONTNAME				L"Arial"
+#define TEXT_DEF_FONT_HEIGHT			18
+#define TEXT_CTRL_DEF_WIDTH				60
+#define TEXT_CTRL_TEXT_EX_WIDTH			20
+struct PenWidth{enum{
+	Thin	= 1,
+	Medium	= 3,
+	Bold	= 5};};
