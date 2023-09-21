@@ -1,5 +1,5 @@
 
-# Simple live streaming app base on windows (one to one)
+# Simple live streaming app 
 
 ## Description
 
