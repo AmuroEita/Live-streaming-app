@@ -1,6 +1,5 @@
 /************************************************************************/
-/* Cef3 UI Control								                        */
-/* author : LixueGang							                        */
+/* Cef3 UI Control								                        */						                        */
 /************************************************************************/
 #pragma once
 #include "CefWndWrapManager.h"
@@ -9,10 +8,10 @@ namespace DuiLib
 	class CCef3CallBack
 	{
 	public:
-		virtual void OnBrowserCreated(void* ThisUI)PURE;                                    // 创建完成，可以navigate		
-		virtual void OnLoadEnd(void* ThisUI)PURE;                                           // Navigate完成 js上下文就绪，可以执行js代码
-		virtual void OnLoadError(int nError, void* ThisUI)PURE;                             // Navigate错误      
-		virtual void OnJSCallCPlus(LPCWSTR lpwsId, LPCWSTR lpwsContent, void* ThisUI)PURE;  // JS回调接口 
+		virtual void OnBrowserCreated(void* ThisUI)PURE;                                    // 鍒涘缓瀹屾垚锛屽彲浠avigate		
+		virtual void OnLoadEnd(void* ThisUI)PURE;                                           // Navigate瀹屾垚 js涓婁笅鏂囧氨缁紝鍙互鎵цjs浠ｇ爜
+		virtual void OnLoadError(int nError, void* ThisUI)PURE;                             // Navigate閿欒      
+		virtual void OnJSCallCPlus(LPCWSTR lpwsId, LPCWSTR lpwsContent, void* ThisUI)PURE;  // JS鍥炶皟鎺ュ彛 
 		virtual void OnBrowserClosed()PURE;
 		virtual void OnRenderProcessTerminated(LPCWSTR lpwsUrl, int nStatus) PURE;
 		virtual void OnTitleChange(LPCWSTR lpTitle, void* ThisUI)PURE;
