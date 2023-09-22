@@ -6,11 +6,6 @@ using namespace std;
 
 #define COURSE_URL_KEYWORD		L"chuanke.com/"
 #define COURSE_URL_KEYWORD_LEN	12
-//Course : http://www.chuanke.com/{$sid}-{$courseid}.html
-//直播课程: http://www.chuanke.com/s{$sid}-{$cid}.html
-//		   http://www.chuanke.com/s{$sid}-{$cid}-{$ts}.html
-//视频课程: http://www.chuanke.com/v{$cid}.html
-//系列课程：http://www.chuanke.com/zhuanji-2-{$cid}-{$page}.html
 
 struct URLType {enum {
 	Common		= 0,
@@ -199,10 +194,10 @@ struct CURLDetector
 	//#define COURSE_URL_KEYWORD		L"www.chuanke.com/"
 	//#define COURSE_URL_KEYWORD_LEN	16
 	//Course : http://www.chuanke.com/{$sid}-{$courseid}.html
-	//直播课程: http://www.chuanke.com/s{$sid}-{$cid}.html
+	//鐩存挱璇剧▼: http://www.chuanke.com/s{$sid}-{$cid}.html
 	//		   http://www.chuanke.com/s{$sid}-{$cid}-{$ts}.html
-	//视频课程: http://www.chuanke.com/v{$cid}.html
-	//系列课程：http://www.chuanke.com/zhuanji-2-{$cid}-{$page}.html
+	//瑙嗛璇剧▼: http://www.chuanke.com/v{$cid}.html
+	//绯诲垪璇剧▼锛歨ttp://www.chuanke.com/zhuanji-2-{$cid}-{$page}.html
 	static void DetectURLType(URLItem& ui)
 	{
 		if (ui.m_strURL.IsEmpty())
