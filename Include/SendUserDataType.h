@@ -1,6 +1,6 @@
 /*************************************************************************
 /*
-/* 魔法表情  音视频定义头文件
+/* 闊宠棰戝畾涔夊ご鏂囦欢
 /*
 /************************************************************************/
 #pragma once
@@ -30,28 +30,28 @@ enum  SendUserDataType
 	SendUserDataType_ChangeInteract = 53,
 	SendUserDataType_RemoteUserSDKSwitched = 54,
 
-	//换教材通知
+	//鎹㈡暀鏉愰�氱煡
 	SendStuChangeBookComplete=80,
 	SendTeaChangeBookComplete=81,
 
-	//上墙通知
+	//涓婂閫氱煡
 	SendVideoOnWall=90,
-	//下墙通知
+	//涓嬪閫氱煡
 	SendVideoOffWall=91,
-	//自己录屏失败，通知对方录屏
+	//鑷繁褰曞睆澶辫触锛岄�氱煡瀵规柟褰曞睆
 	SendSnapShot=100,
 
-	//1v1视频放大还原
+	//1v1瑙嗛鏀惧ぇ杩樺師
 	SendUserDataType_1V1ideoZoomIn = 110,
 	SendUserDataType_1V1VideoZoomOut = 111,
 
-	//1v1白板魔法表情
+	//1v1鐧芥澘榄旀硶琛ㄦ儏
 	SendUserDataType_1V1WBMagic_Play = 120,
 	SendUserDataType_1V1WBMagic_Stop = 121,
 	SendUserDataType_1V1WBMagic_Close = 122,
 	SendUserDataType_1V1WBMagic_DownloadComplete = 123,
 
-	//Demo 音频控制
+	//Demo 闊抽鎺у埗
 
 	SendUserDataType_Demo_Audio_mute = 130,
 	SenduserDataType_Demo_Audio_unmute = 131
