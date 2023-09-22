@@ -1,7 +1,5 @@
 /************************************************************************/
-/* Cef3 Window manager							                        */
-/* author : Qiuyoukun							                        */
-/* date : 2019-08-01							                        */
+/* Cef3 Window manager							                        */						                        */
 /************************************************************************/
 #pragma once
 
@@ -47,16 +45,16 @@ public:
     virtual ~CCefContainerWnd();
 
 	virtual void OnCefCreated(CCefUIBase * pCef);
-    //Èç¹ûÎª×Ó´°¿ÚµÄ»°£¬Ö»ÓĞ¸¸´°¿ÚÏú»Ùºó²Å»á´¥·¢´ËÏûÏ¢
+    //å¦‚æœä¸ºå­çª—å£çš„è¯ï¼Œåªæœ‰çˆ¶çª—å£é”€æ¯åæ‰ä¼šè§¦å‘æ­¤æ¶ˆæ¯
     virtual void OnCefClosed(CCefUIBase * pCef);
-    //ÕıÔÚ¹Ø±Õ
+    //æ­£åœ¨å…³é—­
     virtual bool IsClosing();
-    //°²È«¹Ø±Õ£¬¹Ø±Õ³É¹¦ºó»áÓĞ»Øµ÷Í¨Öª
+    //å®‰å…¨å…³é—­ï¼Œå…³é—­æˆåŠŸåä¼šæœ‰å›è°ƒé€šçŸ¥
     virtual void SafeClose(std::function<void()> funClosed);
     
     void AddCef(CCefUIBase * pCef);
     bool RemoveCef(CCefUIBase * pCef, bool bEnumChild = false);
-    //ÕâÀïÃæµÄ¸¸×Ó¹ØÏµ¶¼ÊÇÂß¼­¸¸×Ó¹ØÏµ£¬Æä´°¿Ú²¢ÎŞ¸¸×Ó¹ØÁª£¬Èç¹û´°¿Ú´æÔÚ¸¸×Ó¹ØÏµ£¬ÔòbRealChild²ÎÊıÎªtrue
+    //è¿™é‡Œé¢çš„çˆ¶å­å…³ç³»éƒ½æ˜¯é€»è¾‘çˆ¶å­å…³ç³»ï¼Œå…¶çª—å£å¹¶æ— çˆ¶å­å…³è”ï¼Œå¦‚æœçª—å£å­˜åœ¨çˆ¶å­å…³ç³»ï¼Œåˆ™bRealChildå‚æ•°ä¸ºtrue
     void AddChildCefContainer(CCefContainerWnd* pChild, bool bRealChild = false);
     void RemoveChildCefContainer(CCefContainerWnd* pChild);
 
@@ -91,7 +89,7 @@ private:
     friend class CCefWndWrapManager;
     std::vector<CCefUIBase*> m_vCefList;
     std::vector<CCefContainerWnd*> m_vChilds;
-    bool m_bFatherReal;             //Õæ¸¸´°¿Ú
+    bool m_bFatherReal;             //çœŸçˆ¶çª—å£
     bool m_bAutoDelete;
     CCefContainerWnd * m_pFather;
     std::function<void()> m_funClosed;
