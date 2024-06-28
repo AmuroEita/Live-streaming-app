@@ -10,8 +10,6 @@ A relatively professional online course live streaming software developed based 
 - Access to Agora SDK to realize one-to-one video communication function
 
 
-一对一实时视频交流软件，基于windows，该repo已包含简单的UI界面。
-
 ### Dependencies
 
 - Agora SDK
