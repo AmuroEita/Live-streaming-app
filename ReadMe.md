@@ -10,7 +10,7 @@ An online live streaming client developed based on Agora. It has basic functions
 - Access to Agora SDK to realize one-to-one video communication function
 
 
-### Dependencies
+## Dependencies
 
 - Agora SDK
 - DUILib
